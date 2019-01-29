@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/redux_tic_tac_toe/precache-manifest.12321c1d89cdfa984f62551913d4c2b0.js"
+  "/react_tic_tac_toe/precache-manifest.cd58c04bfc0983d7248b45a8fcdcf2b9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/redux_tic_tac_toe/index.html", {
+workbox.routing.registerNavigationRoute("/react_tic_tac_toe/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
