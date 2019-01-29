@@ -1,3 +1,5 @@
+/* eslint max-statements: ["error", 20] */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -87,27 +89,14 @@ class Game extends React.Component { // eslint-disable-line no-unused-vars
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
-
-    const moves = history.map((step, move) => {
-      const desc = move
-        ? 'Go to move #' + move
-        : 'Go to game start';
-      const moveMessage = move
-        ? step.player + ' claimed Square ' + step.claimedSquare + '.'
-        : 'Game Start!';
-      return (
-        <li key={move}>
-          {moveMessage}&nbsp;&nbsp;
-          <button onClick={() => this.jumpTo(move)}>
-            {desc}
-          </button>
-        </li>
-      );
-    });
+    const isGameOver = calculateGameOver(current.squares);
+    const moves = buildMovesList(history, this);
 
     let status;
     if (winner) {
-      status = 'Winner: ' + winner;
+      status = 'Winner: ' + winner + ' 🏆';
+    } else if (isGameOver) {
+      status = 'Game Over 👹';
     } else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
@@ -154,4 +143,27 @@ function calculateWinner(squares) {
     }
   }
   return null;
+}
+
+function buildMovesList(history, board) {
+  return history.map((step, move) => {
+    const desc = move
+      ? 'Go to move #' + move
+      : 'Go to game start';
+    const moveMessage = move
+      ? step.player + ' claimed Square ' + step.claimedSquare + '.'
+      : 'Game Start!';
+    return (
+      <li key={move}>
+        {moveMessage}&nbsp;&nbsp;
+        <button onClick={() => board.jumpTo(move)}>
+          {desc}
+        </button>
+      </li>
+    );
+  });
+}
+
+function calculateGameOver(squares) {
+  return squares.every((currentValue) => currentValue !== null);
 }
