@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Square(props) {
+function Square(props) { // eslint-disable-line no-unused-vars
   return (
     <button className="square" onClick={props.onClick}>
       {props.value}
@@ -10,7 +10,7 @@ function Square(props) {
   );
 }
 
-class Board extends React.Component {
+class Board extends React.Component { // eslint-disable-line no-unused-vars
   renderSquare(i) {
     return (
       <Square
@@ -43,7 +43,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
+class Game extends React.Component { // eslint-disable-line no-unused-vars
   constructor(props) {
     super(props);
     this.state = {
