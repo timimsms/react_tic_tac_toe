@@ -1,3 +1,5 @@
+Small project implementing Tic-tac-toe in React. Hosted with Github pages (See: [demo](https://timimsms.github.io/redux_tic_tac_toe/)).
+
 # Overview
 
 ## Initial Build
@@ -51,6 +53,10 @@ Run the following to check the main application files JS code syntax:
 ```bash
 eslint src/index.jsx
 ```
+
+## Testing
+
+`TODO` - Add information around testing.
 
 # Running the Application
 
