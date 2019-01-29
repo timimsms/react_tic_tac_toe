@@ -20,6 +20,7 @@ class Board extends React.Component {
   }
 
   handleClick(i) {
+    console.log('Click on ' + i + ' for ' + (this.state.xIsNext ? 'X' : 'O'));
     const squares = this.state.squares.slice();
     if (calculateWinner(squares) || squares[i]) {
       return;
