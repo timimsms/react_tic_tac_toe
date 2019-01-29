@@ -1,12 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Overview
 
 ## Initial Build
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Origins
+
 Small tutorial application creating from React's main tutorial:
 
 - [React: Tic-tac-toe Tutorial](https://reactjs.org/tutorial/tutorial.html#what-are-we-building)
+
+From this basic demo, the following additions were implemented.
 
 ## Additions
 
@@ -29,6 +33,14 @@ Small tutorial application creating from React's main tutorial:
 - [ ] Add a level of polish by integrating a UI kit and/or more spruced up CSS.
 - [ ] "Lock" the UI to make it more clear the game is over when no moves remain.
 - [ ] Ability to host example site somewhere demo'ing the code.
+
+# Screenshots
+
+![New Game](/docs/screenshots/00_new_game.png)
+![First Move](/docs/screenshots/01_first_move.png)
+![Winner!](/docs/screenshots/02_winner_a.png)
+![Winner (again)!](/docs/screenshots/03_winner_b.png)
+![Game Over](/docs/screenshots/04_game_over.png)
 
 # Development
 
