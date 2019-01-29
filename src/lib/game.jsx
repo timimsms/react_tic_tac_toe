@@ -74,6 +74,11 @@ class Game extends React.Component { // eslint-disable-line no-unused-vars
           <div>{status}</div>
           <ol>{moves}</ol>
         </div>
+        <div className="game-actions">
+          <button type="button" onClick={ () => window.location.reload() }>
+            <strong>Start New Game</strong>
+          </button>
+        </div>
       </div>
     );
   }

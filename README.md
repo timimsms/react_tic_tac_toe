@@ -12,12 +12,12 @@ Small tutorial application creating from React's main tutorial:
 
 - [x] Tracks player state per turn.
 - [x] States which player went per turn and which square was taken.
-- [ ] Indicate when game is "Over" or locked (i.e., no moves left).
+- [x] Indicate when game is "Over" or locked (i.e., no moves left).
+- [x] Better modularize areas of application (index.jsx) into own files.
+- [x] "New Game" button.
 
 ## Next Steps
 
-- [ ] "New Game" button.
-- [ ] Better modularize areas of application (index.jsx) into own files.
 - [ ] Add test coverage with [Jest](https://jestjs.io/).
 
 ## More Projects
