@@ -2,7 +2,7 @@
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://timimsms.github.io/redux_tic_tac_toe",
+  "homepage": "https://timimsms.github.io/react_tic_tac_toe",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

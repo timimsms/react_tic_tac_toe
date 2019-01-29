@@ -1,4 +1,4 @@
-Small project implementing Tic-tac-toe in React. Hosted with Github pages (See: [demo](https://timimsms.github.io/redux_tic_tac_toe/)).
+Small project implementing Tic-tac-toe in React. Hosted with Github pages (See: [demo](https://timimsms.github.io/react_tic_tac_toe/)).
 
 # Overview
 
@@ -71,4 +71,4 @@ In the project directory, you can run:
 | `npm run build` | [deployment](https://facebook.github.io/create-react-app/docs/deployment) |
 | `npm run eject` | N/A |
 
-See the [Wiki page on **Available Scripts**](https://github.com/timimsms/redux_tic_tac_toe/wiki/Available-Scripts).
+See the [Wiki page on **Available Scripts**](https://github.com/timimsms/react_tic_tac_toe/wiki/Available-Scripts).
