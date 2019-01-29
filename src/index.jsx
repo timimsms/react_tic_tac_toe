@@ -48,6 +48,8 @@ class Game extends React.Component { // eslint-disable-line no-unused-vars
     super(props);
     this.state = {
       history: [{
+        claimedSquare: null,
+        player: null,
         squares: Array(9).fill(null),
       }],
       isXNext: true,
@@ -65,6 +67,8 @@ class Game extends React.Component { // eslint-disable-line no-unused-vars
     squares[i] = this.state.xIsNext ? 'X' : 'O';
     this.setState({
       history: history.concat([{
+        claimedSquare: i,
+        player: this.state.xIsNext ? 'X' : 'O',
         squares: squares,
       }]),
       stepNumber: history.length,
@@ -88,13 +92,18 @@ class Game extends React.Component { // eslint-disable-line no-unused-vars
       const desc = move
         ? 'Go to move #' + move
         : 'Go to game start';
+      const moveMessage = move
+        ? step.player + ' claimed Square ' + step.claimedSquare + '.'
+        : 'Game Start!';
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+          {moveMessage}&nbsp;&nbsp;
+          <button onClick={() => this.jumpTo(move)}>
+            {desc}
+          </button>
         </li>
       );
     });
-
 
     let status;
     if (winner) {
